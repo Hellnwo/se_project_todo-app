@@ -1,17 +1,17 @@
 # Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+Simple app to create To-Do lists that can be checked off and deleted as they are completed. Dates can be added to tasks as well!
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+Checkboxes, dates, and a fancy little window to clearly display all of your tasks. 
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+Base code was refactored using OOP guidelines for Javascript.
 
 ## Deployment
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+- https://hellnwo.github.io/se_project_todo-app/
