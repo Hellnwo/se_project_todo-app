@@ -4,7 +4,7 @@ class Todo {
     this._templateElement = document.querySelector(selector);
   }
 
-  _setEventlisteners() {
+  _setEventListeners() {
     this._todoDeleteBtn.addEventListener("click", () => {
       this._todoElement.remove();
     });
@@ -22,7 +22,7 @@ class Todo {
     this._todoLabel.setAttribute("for", `todo-${this._data.id}`);
   }
 
-  _formDate() {
+  _generateDateEl() {
     const todoDate = this._todoElement.querySelector(".todo__date");
     const dueDate = new Date(this._data.date);
       dueDate.setMinutes(dueDate.getMinutes() + dueDate.getTimezoneOffset());
@@ -46,9 +46,9 @@ class Todo {
 
     this._todoNameEl.textContent = this._data.name;
 
-    this._formDate();
+    this._generateDateEl();
     this._generateCheckboxEl();
-    this._setEventlisteners();
+    this._setEventListeners();
 
     return this._todoElement;
   }
