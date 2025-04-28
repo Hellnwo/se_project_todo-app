@@ -36,12 +36,11 @@ addTodoCloseBtn.addEventListener("click", () => {
 addTodoForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
   const name = evt.target.name.value;
-  const dateInput = evt.target.date.value;
+  const date = evt.target.date.value;
 
   const id = uuidv4();
   const values = { name, date, id };
   renderTodo(values);
-  todosList.append(todo);
   newTodoValidator.resetValidation();
   closeModal(addTodoPopup);
 });
